@@ -64,7 +64,7 @@ void Worker::done()
 FaceMap<Rect, pair<vector<Rect>, vector<Rect>>> threadFunction(string filepath, Worker* worker)
 {
     auto cascadeLoader = [](std::string filepath) -> CascadeClassifier{
-        CascadeClassifier classifier("C:/Users/DalidovichAV/Dropbox/Detection/Detection/" + filepath);
+        CascadeClassifier classifier(filepath);
         if(classifier.empty()){
                 std::cout << "Can't load classifier: "
                           << filepath<< " . "
