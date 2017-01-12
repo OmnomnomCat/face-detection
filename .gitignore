@@ -9,6 +9,14 @@
 *.so
 *.dll
 *.dylib
+*.exe
+*.exp
+*.lib
+*.pdb
+*.xml
+
+*.zip
+*.7z
 
 # Qt-es
 
